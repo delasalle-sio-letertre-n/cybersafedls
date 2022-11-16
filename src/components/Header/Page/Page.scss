@@ -1,0 +1,29 @@
+@import "../../StyleVariables/mainVariables.scss";
+
+.Content {
+  margin-top: 10rem;
+  width: 100vw;
+  display: block;
+  font-family: $text-style;
+  text-align: center;
+
+  .CenteredImg {
+    width: 70vw;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .Summary {
+    color: grey;
+  }
+}
+
+@media (min-width: 900px) {
+  .Content {
+    .CenteredImg {
+      width: 45vw;
+    }
+  }
+}
