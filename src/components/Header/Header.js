@@ -22,7 +22,7 @@ function Header() {
       </div>
 
       <nav className={"NavigationList-wrapper " + menuStatus}>
-        <ul className="NavigationList">
+        <ul className="NavigationList" style={{ paddingLeft: 0 }}>
           <li>
             <a href="/" className="underline">
               Accueil
