@@ -28,15 +28,40 @@ function Promo({ promoValue }) {
           <div className="PromoWrapper">
             <div className="PromoItem">
               <div className="PromoItemContent">
-                <h2>Mathis Hervé</h2>
-                <p>Chef de projet</p>
+                <h2>Mathis <br />Hervé</h2>
+                <p>Chef de Projet</p>
               </div>
             </div>
-            <div className="PromoItem"></div>
-            <div className="PromoItem"></div>
-            <div className="PromoItem"></div>
-            <div className="PromoItem"></div>
-            <div className="PromoItem"></div>
+            <div className="PromoItem">
+              <div className="PromoItemContent">
+                <h2>Dorian <br />Biojout</h2>
+                <p>Secrétaire / Rédacteur</p>
+              </div>
+            </div>
+            <div className="PromoItem">
+              <div className="PromoItemContent">
+                <h2>Pierre-Louis <br />Le Pouliquen</h2>
+                <p>Rédacteur en chef</p>
+              </div>
+            </div>
+            <div className="PromoItem">
+              <div className="PromoItemContent">
+                <h2>Nathan <br />Boël</h2>
+                <p>Rédacteur</p>
+              </div>
+            </div>
+            <div className="PromoItem">
+              <div className="PromoItemContent">
+                <h2>Jimmy <br />Le Goff</h2>
+                <p>Développeur</p>
+              </div>
+            </div>
+            <div className="PromoItem">
+              <div className="PromoItemContent">
+                <h2>Nicolas <br />Le Tertre</h2>
+                <p>Intégrateur / Développeur</p>
+              </div>
+            </div>
           </div>
         </>
       );
