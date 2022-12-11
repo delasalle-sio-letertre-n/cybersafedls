@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import "./Header.scss";
 import HeaderLogo from "../../assets/logo_title-nobg.webp";
 import "../MenuBurger/MenuBurger.scss";
@@ -24,19 +25,19 @@ function Header() {
       <nav className={"NavigationList-wrapper " + menuStatus}>
         <ul className="NavigationList" style={{ paddingLeft: 0 }}>
           <li>
-            <a href="/" className="underline">
+            <Link to="/" className="underline">
               Accueil
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/article-1" className="underline">
+            <Link to="/article-1" className="underline">
               Articles
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="underline">
+            <Link to="/#a-propos" className="underline">
               A propos
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#" className="underline">

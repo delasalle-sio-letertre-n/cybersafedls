@@ -7,6 +7,8 @@
   display: block;
   font-family: $text-style;
   text-align: center;
+  padding-bottom: 2.5rem;
+  min-height: 90vh;
 
   .ContentImg {
     max-width: 60%;
@@ -40,6 +42,11 @@
     text-align: left;
   }
 
+  .CategoryContent {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
   .GridContainer {
     display: grid;
     grid-template-columns: auto;
@@ -56,6 +63,97 @@
       margin-top: 1rem;
     }
   }
+
+  #choixPromo {
+    width: 220px;
+    height: 40px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 14px;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .ChoixPromoCenter {
+    text-align: center;
+    p,
+    select {
+      text-align: center;
+    }
+  }
+
+  .PromoWrapper {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.5rem;
+    padding: 1rem;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    .PromoItem {
+      aspect-ratio: 0.67/1;
+      position: relative;
+      padding: 1rem;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      text-align: center;
+      background-color: #dfe7fd;
+      color: whitesmoke;
+    }
+
+    .PromoItem:nth-child(n + 5) {
+      background-color: #fde2e4;
+    }
+
+    .PromoItem::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: 0 0;
+    }
+    .PromoItem:nth-child(1):before {
+      background-image: url(../../assets/Promo/1.png);
+    }
+
+    .PromoItem:nth-child(2):before {
+      background-image: url(../../assets/Promo/2.png);
+    }
+
+    .PromoItem:nth-child(3):before {
+      background-image: url(../../assets/Promo/3.png);
+    }
+
+    .PromoItem:nth-child(4):before {
+      background-image: url(../../assets/Promo/4.png);
+    }
+
+    .PromoItem:nth-child(5):before {
+      background-image: url(../../assets/Promo/5.png);
+    }
+
+    .PromoItem:nth-child(6):before {
+      background-image: url(../../assets/Promo/6.png);
+    }
+  }
+
+  .PromoItemContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1;
+  }
 }
 
 @media (min-width: 900px) {
@@ -69,13 +167,9 @@
     .CenteredImg {
       max-width: 40rem;
     }
-  }
-}
 
-@media (min-width: 1200px) {
-  .Content {
-    .GridContainer {
-      grid-template-columns: repeat(2, 1fr);
+    .PromoWrapper {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }

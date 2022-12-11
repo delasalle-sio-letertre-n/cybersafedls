@@ -1,0 +1,28 @@
+@import "../StyleVariables/mainVariables.scss";
+
+.Footer {
+  bottom: 0;
+  height: 10rem;
+  background-color: #262626;
+  text-align: center;
+
+  .FooterGroup {
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 7rem;
+
+    .FooterItem {
+      display: inline;
+      color: white;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      line-height: 7rem !important;
+      font: 600 1rem "Helvetica Neue", Helvetica, "Roboto", Arial;
+    }
+  }
+
+  span {
+    color: white;
+    font: 500 1rem "Helvetica Neue", Helvetica, "Roboto", Arial;
+  }
+}
