@@ -11,10 +11,10 @@ function Footer() {
         <a>
           <li className="FooterItem">A Propos</li>
         </a>
-        <a>
+        <a href="/mentions-legales-cgu">
           <li className="FooterItem">Mentions Légales</li>
         </a>
-        <a>
+        <a href="mailto:cybersafe-dls@protonmail.com">
           <li className="FooterItem">Contact</li>
         </a>
       </ul>

@@ -10,7 +10,7 @@ function Article1() {
       </h1>
       <img
         className="CenteredImg"
-        src="https://cybersafe-dls.fr/theme1-img/t1-img1.webp"
+        src={require("../../assets/theme1-img/t1-img1.webp")}
       ></img>
       <h2>Sommaire</h2>
       <ul className="Summary">
@@ -117,7 +117,7 @@ function Article1() {
         </ul>
         <img
           className="ContentImg"
-          src="https://cybersafe-dls.fr/theme1-img/t1-img2.webp"
+          src={require("../../assets/theme1-img/t1-img2.webp")}
         ></img>
       </div>
       <h2>✅ Les moyens de remédiation</h2>
@@ -126,7 +126,7 @@ function Article1() {
         <div className="GridContainer">
           <img
             className="ContentImg"
-            src="https://cybersafe-dls.fr/theme1-img/t1-img3.webp"
+            src={require("../../assets/theme1-img/t1-img3.webp")}
           ></img>
 
           <div>
@@ -160,35 +160,83 @@ function Article1() {
           Lorsque l'auteur de l'escroquerie est identifiable, la victime de
           l'arnaque sur Internet peut saisir une juridiction civile pour obtenir
           le remboursement des sommes extorquées et des dommages et intérêts en
-          cas de préjudice. En cas de phishing où toute autre forme
-          d'escroquerie, la victime peut porter plainte auprès d'un
-          commissariat. Si l'auteur de l'arnaque sur Internet n'est pas
-          identifiable, la victime peut porter plainte contre escroc. Le
-          tribunal pénal saisi peut non seulement sanctionner l'auteur de
-          l'escroquerie, mais aussi octroyer des dommages et intérêts au
-          particulier arnaqué sur Internet. Le particulier arnaqué sur Internet
-          peut toujours opter pour la saisie des tribunaux français, que
-          l'auteur de l'escroquerie se situe en France ou à l'étranger.
-          Procédure judiciaire À défaut de résolution amiable après l'envoi
-          d'une lettre de mise en demeure, le particulier arnaqué sur Internet
-          peut saisir au choix le tribunal d'instance lorsque le montant du
-          litige est inférieur à 10 000 € pour obtenir réparation. Ou le
-          tribunal pénal pour faire sanctionner l'auteur de l'infraction et
-          obtenir des dommages et intérêts. Usurpation d’identité : L’article
-          434-23 du Code pénal, qui punit de 5 ans d’emprisonnement et 75 000
-          euros d’amende le fait de prendre le nom d’un tiers. Mais surtout,
-          depuis la loi LOPSI II du 14 mars 2011, le « phishing » rentre dans le
-          champ de la nouvelle incrimination relative à l’usurpation d’identité
-          en ligne, que l’article 226-4-1 de Code pénal punit d’un an
-          d’emprisonnement et de 15 000 € d’amende. Source : legifrance.gouv.fr
-          Escroquerie : L’article 313-1 du Code pénal, punit de 5 ans
-          d’emprisonnement et de 375 000 € d’amende. Source : legifrance.gouv.fr
-          Collecte frauduleuse de données à caractère personnel : L’article
-          226-18 du Code pénal, qui prévoit une peine de 5 ans de prison et de
-          300 000 € d’amende. Source : legifrance.gouv.fr Atteinte à un système
-          de traitement automatisé de données : L’article 323-3 du Code pénal,
-          punit de deux ans d’emprisonnement et 30 000 € d’amende. Source :
-          legifrance.gouv.fr
+          cas de préjudice.
+        </p>
+        <p>
+          En cas de phishing où toute autre forme d'escroquerie, la victime peut
+          porter plainte auprès d'un commissariat. Si l'auteur de l'arnaque sur
+          Internet n'est pas identifiable, la victime peut porter plainte contre
+          escroc. Le tribunal pénal saisi peut non seulement sanctionner
+          l'auteur de l'escroquerie, mais aussi octroyer des dommages et
+          intérêts au particulier arnaqué sur Internet.
+        </p>
+        <p>
+          Le particulier arnaqué sur Internet peut toujours opter pour la saisie
+          des tribunaux français, que l'auteur de l'escroquerie se situe en
+          France ou à l'étranger.
+        </p>
+        <p>Procédure judiciaire</p>
+        <p>
+          À défaut de résolution amiable après l'envoi d'une lettre de mise en
+          demeure, le particulier arnaqué sur Internet peut saisir au choix le
+          tribunal d'instance lorsque le montant du litige est inférieur à 10
+          000 € pour obtenir réparation. Ou le tribunal pénal pour faire
+          sanctionner l'auteur de l'infraction et obtenir des dommages et
+          intérêts.
+        </p>
+        <br />
+        <p>
+          <p></p>Usurpation d’identité :
+        </p>
+        <p>
+          L’article 434-23 du Code pénal, qui punit de 5 ans d’emprisonnement et
+          75 000 euros d’amende le fait de prendre le nom d’un tiers. Mais
+          surtout, depuis la loi LOPSI II du 14 mars 2011, le « phishing »
+          rentre dans le champ de la nouvelle incrimination relative à
+          l’usurpation d’identité en ligne, que l’article 226-4-1 de Code pénal
+          punit d’un an d’emprisonnement et de 15 000 € d’amende.
+        </p>
+        <p>
+          Source :{" "}
+          <a href="https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165379/#LEGISCTA000006165379">
+            legifrance.gouv.fr
+          </a>
+        </p>
+        <br />
+        <p>Escroquerie :</p>
+        <p>
+          L’article 313-1 du Code pénal, punit de 5 ans d’emprisonnement et de
+          375 000 € d’amende.
+        </p>
+        <p>
+          Source :{" "}
+          <a href="https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165331/">
+            legifrance.gouv.fr
+          </a>
+        </p>
+        <br />
+        <p>Collecte frauduleuse de données à caractère personnel :</p>
+        <p>
+          L’article 226-18 du Code pénal, qui prévoit une peine de 5 ans de
+          prison et de 300 000 € d’amende.
+        </p>
+        <p>
+          Source :{" "}
+          <a href="https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165313/#LEGISCTA000006165313">
+            legifrance.gouv.fr
+          </a>
+        </p>
+        <br />
+        <p>Atteinte à un système de traitement automatisé de données :</p>
+        <p>
+          L’article 323-3 du Code pénal, punit de deux ans d’emprisonnement et
+          30 000 € d’amende.
+        </p>
+        <p>
+          Source :{" "}
+          <a href="https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006149839/">
+            legifrance.gouv.fr
+          </a>
         </p>
       </div>
     </div>

@@ -1,5 +1,9 @@
 @import "../StyleVariables/mainVariables.scss";
 
+* {
+  scroll-padding-top: 6rem;
+}
+
 .Content {
   margin-top: 10rem;
   margin-left: 8vw;
@@ -18,7 +22,108 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 75%;
+    max-width: 95%;
+  }
+
+  .ArticlesWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(300px, auto);
+    padding-top: 7.5rem;
+    padding-bottom: 5rem;
+
+    .Art {
+      background-position: center;
+      display: flex;
+      position: relative;
+      align-items: flex-end;
+      justify-content: center;
+      background-size: cover;
+      overflow: hidden;
+      background-color: #f2f3f5;
+    }
+
+    .Art1 {
+      background-image: url(../../assets/Articles/bg-Art1.jpg);
+    }
+
+    .Art2 {
+      background-image: url(../../assets/Articles/bg-Art2.jpg);
+    }
+    .Art3 {
+      background-image: url(../../assets/Articles/bg-Art3.jpg);
+    }
+    .Art4 {
+      background-image: url(../../assets/Articles/bg-Art4.jpg);
+    }
+    .Art5 {
+      background-image: url(../../assets/Articles/bg-Art5.jpg);
+    }
+    .Art6 {
+      background-image: url(../../assets/Articles/bg-Art6.jpg);
+    }
+    .Art7 {
+      background-image: url(../../assets/Articles/bg-Art7.jpg);
+    }
+
+    a {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+    }
+
+    .ArtContent {
+      content: "";
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 2;
+      color: white;
+      padding-bottom: 2rem;
+      text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+      background-color: $dark-blue25;
+      width: 100%;
+
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        text-align: center;
+        color: rgb(236, 236, 236);
+        margin: 0;
+        font-size: 1.25rem;
+      }
+    }
+
+    .Art::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $dark-blue25;
+      z-index: 1;
+    }
+
+    .Art:hover::after {
+      background-color: $dark-blue50;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .Art:hover {
+      box-shadow: 0 0 11px rgba(33, 33, 33, 0.25);
+    }
   }
 
   h1 {
@@ -154,7 +259,6 @@
     }
   }
 
-
   .PromoItem::after {
     content: "";
     display: block;
@@ -164,7 +268,25 @@
     width: 100%;
     height: 200%;
     transform: translateY(0);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.009) 11.7%,
+      rgba(0, 0, 0, 0.034) 22.1%,
+      rgba(0, 0, 0, 0.072) 31.2%,
+      rgba(0, 0, 0, 0.123) 39.4%,
+      rgba(0, 0, 0, 0.182) 46.6%,
+      rgba(0, 0, 0, 0.249) 53.1%,
+      rgba(0, 0, 0, 0.32) 58.9%,
+      rgba(0, 0, 0, 0.394) 64.3%,
+      rgba(0, 0, 0, 0.468) 69.3%,
+      rgba(0, 0, 0, 0.54) 74.1%,
+      rgba(0, 0, 0, 0.607) 78.8%,
+      rgba(0, 0, 0, 0.668) 83.6%,
+      rgba(0, 0, 0, 0.721) 88.7%,
+      rgba(0, 0, 0, 0.762) 94.1%,
+      rgba(0, 0, 0, 0.79) 100%
+    );
   }
 
   .PromoItem:hover::after {
@@ -219,11 +341,37 @@
     }
 
     .CenteredImg {
-      max-width: 40rem;
+      max-width: 60rem;
     }
 
     .PromoWrapper {
       grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .Content {
+    .ArticlesWrapper {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(300px, auto);
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .Content {
+    .ArticlesWrapper {
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(300px, auto);
+
+      .Art1 {
+        grid-row: 1 / 3;
+      }
+
+      .Art4 {
+        grid-column: 2 / 4;
+      }
     }
   }
 }

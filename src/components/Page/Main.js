@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Articles from "./Articles";
 import "./Page.scss";
 import Promo from "./Promo";
 
@@ -9,15 +10,17 @@ function Main() {
       <h1>Bienvenue !</h1>
       <img
         className="CenteredImg"
-        src="https://cybersafe-dls.fr/accueil-img/accueil-img1.webp"
+        src={require("../../assets/accueil-img/accueil-img1.webp")}
       ></img>
+      <br />
+      <Articles />
       <h2 id="a-propos">📌 À propos du projet</h2>
       <hr />
       <div className="CategoryContent">
         <p>
           Dans le cadre de notre 2ème année de BTS nous devons mettre en œuvre
           un projet annuel. Nous avons choisi de traiter un sujet en lien avec
-          notre filière, c'est donc pour ça que nous sommes parties sur le thème
+          notre filière, c'est donc pour ça que nous sommes partis sur le thème
           de la cybersécurité.
         </p>
         <p>
@@ -34,11 +37,9 @@ function Main() {
           d’être compréhensible pour le plus grand nombre d’entre vous. Ainsi
           nous souhaitons promouvoir les bonnes pratiques en matière de sécurité
           numérique. Cette plateforme contiendra des ressources de
-          sensibilisation adaptée à des utilisateurs non-initiés et nous leur
+          sensibilisation adaptées à des utilisateurs non-initiés et nous leur
           mettons à disposition une boîte à outils numérique afin de se prémunir
-          contre les attaques informatiques. Nous proposerons également des quiz
-          pour ceux qui le souhaitent afin qu’ils puissent s’auto-évaluer sur
-          les connaissances vues sur notre site.
+          contre les attaques informatiques.
         </p>
       </div>
       <h2>❓ Qui sommes-nous ?</h2>

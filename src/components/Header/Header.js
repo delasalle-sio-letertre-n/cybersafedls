@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "./Header.scss";
 import HeaderLogo from "../../assets/logo_title-nobg.webp";
@@ -6,6 +6,34 @@ import "../MenuBurger/MenuBurger.scss";
 
 function Header() {
   const [menuStatus, setMenuStatus] = useState("close");
+  const menuRef = useRef(null);
+
+  const handleClickMenu = () => {
+    setMenuStatus("close");
+  };
+
+  useEffect(() => {
+    const handleClickOutsideMenu = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuStatus("close");
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutsideMenu);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutsideMenu);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleCloseMenu = () => {
+      setMenuStatus("close");
+    };
+    window.addEventListener("hashchange", handleCloseMenu);
+    return () => {
+      window.removeEventListener("hashchange", handleCloseMenu);
+    };
+  }, []);
+
   return (
     <div className="Header">
       <div className="MenuBurger">
@@ -13,7 +41,7 @@ function Header() {
           className="MenuBurger-container"
           role="button"
           onClick={() =>
-            setMenuStatus(menuStatus === "open" ? "close" : "open")
+            setMenuStatus((status) => (status === "open" ? "close" : "open"))
           }
         >
           <i className={menuStatus}></i>
@@ -22,34 +50,47 @@ function Header() {
         </div>
       </div>
 
-      <nav className={"NavigationList-wrapper " + menuStatus}>
+      <nav ref={menuRef} className={"NavigationList-wrapper " + menuStatus}>
         <ul className="NavigationList" style={{ paddingLeft: 0 }}>
           <li>
-            <Link to="/" className="underline">
+            <Link to="/#" className="underline" onClick={handleClickMenu}>
               Accueil
             </Link>
           </li>
           <li>
-            <Link to="/article-1" className="underline">
+            <Link
+              to="/#articles"
+              className="underline"
+              onClick={handleClickMenu}
+            >
               Articles
             </Link>
           </li>
           <li>
-            <Link to="/#a-propos" className="underline">
+            <Link
+              to="/#a-propos"
+              className="underline"
+              onClick={handleClickMenu}
+            >
               A propos
             </Link>
           </li>
           <li>
-            <a href="#" className="underline">
+            <a
+              href="mailto:cybersafe-dls@protonmail.com"
+              className="underline"
+              onClick={handleClickMenu}
+            >
               Contact
             </a>
           </li>
         </ul>
       </nav>
       <span className="LogoSpan">
-        <img className="Logo" src={HeaderLogo} />
+        <img className="Logo" src={HeaderLogo} alt="Header Logo" />
       </span>
     </div>
   );
 }
+
 export default Header;
