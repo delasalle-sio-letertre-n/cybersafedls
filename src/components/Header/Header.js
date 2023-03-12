@@ -9,7 +9,7 @@ function Header() {
   const menuRef = useRef(null);
 
   const handleClickMenu = () => {
-    setMenuStatus("close");
+    setMenuStatus((status) => (status === "open" ? "close" : "open"));
   };
 
   useEffect(() => {
@@ -40,9 +40,7 @@ function Header() {
         <div
           className="MenuBurger-container"
           role="button"
-          onClick={() =>
-            setMenuStatus((status) => (status === "open" ? "close" : "open"))
-          }
+          onClick={handleClickMenu}
         >
           <i className={menuStatus}></i>
           <i className={menuStatus}></i>
