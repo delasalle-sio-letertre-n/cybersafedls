@@ -7,22 +7,29 @@
   text-align: center;
 
   .FooterGroup {
-    padding-inline-start: 0;
-    margin-block: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
     height: 7rem;
 
-    .FooterItem {
-      display: inline;
+    a {
+      display: block;
+      text-decoration: none;
+      list-style-type: none;
       color: white;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      line-height: 7rem !important;
+      padding: 0 0.5rem;
+      line-height: 7rem;
       font: 600 1rem "Helvetica Neue", Helvetica, "Roboto", Arial;
     }
   }
 
   span {
+    display: block;
     color: white;
     font: 500 1rem "Helvetica Neue", Helvetica, "Roboto", Arial;
+    margin-top: 1rem;
   }
 }

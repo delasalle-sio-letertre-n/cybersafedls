@@ -5,10 +5,10 @@ function Footer() {
   return (
     <div className="Footer">
       <ul className="FooterGroup">
-        <a href="/">
+        <a href="/#">
           <li className="FooterItem">Accueil</li>
         </a>
-        <a>
+        <a href="/#a-propos">
           <li className="FooterItem">A Propos</li>
         </a>
         <a href="/mentions-legales-cgu">
@@ -18,7 +18,7 @@ function Footer() {
           <li className="FooterItem">Contact</li>
         </a>
       </ul>
-      <span>Copyright © cybersafe-dls.fr - Tous droit réservés</span>
+      <span>Copyright © cybersafe-dls.fr - Tous droits réservés</span>
     </div>
   );
 }

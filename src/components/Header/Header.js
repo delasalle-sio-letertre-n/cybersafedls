@@ -14,7 +14,11 @@ function Header() {
 
   useEffect(() => {
     const handleClickOutsideMenu = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        !event.target.closest(".MenuBurger-container")
+      ) {
         setMenuStatus("close");
       }
     };

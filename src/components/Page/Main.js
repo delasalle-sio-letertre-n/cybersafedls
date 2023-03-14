@@ -7,12 +7,17 @@ function Main() {
   const [choixPromoValue, setChoixPromoValue] = useState();
   return (
     <div className="Content">
-      <h1>Bienvenue !</h1>
       <img
-        className="CenteredImg"
-        src={require("../../assets/accueil-img/accueil-img1.webp")}
+        className="CenteredImg Banner"
+        src={require("../../assets/accueil-img/accueil-banner-1.webp")}
       ></img>
       <br />
+      <h1>
+        Vous pensez être protégé sur internet ?<br />
+        Laissez-nous vous prouver le contraire !
+      </h1>
+      <br />
+      <hr />
       <Articles />
       <h2 id="a-propos">📌 À propos du projet</h2>
       <hr />
