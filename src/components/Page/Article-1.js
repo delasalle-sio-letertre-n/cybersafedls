@@ -9,7 +9,7 @@ function Article1() {
         Se protéger des e-mails frauduleux
       </h1>
       <img
-        className="CenteredImg"
+        className="ArticleImg"
         src={require("../../assets/theme1-img/t1-img1.webp")}
       ></img>
       <h2>Sommaire</h2>

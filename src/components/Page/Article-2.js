@@ -9,7 +9,7 @@ function Article2() {
         Securisation des mots de passe
       </h1>
       <img
-        className="CenteredImg"
+        className="ArticleImg"
         src={require("../../assets/theme2-img/t2-img1.webp")}
       ></img>
       <h2>Sommaire</h2>
@@ -95,39 +95,115 @@ function Article2() {
             l’attaquant prendra du temps à le trouver avec cette attaque.
           </li>
         </ul>
-        <img
-          className="ContentImg"
-          src={require("../../assets/theme1-img/t1-img2.webp")}
-        ></img>
       </div>
       <h2>✅ Les moyens de remédiation</h2>
       <hr />
       <div className="CategoryContent">
         <div className="GridContainer">
-          <img
-            className="ContentImg"
-            src={require("../../assets/theme1-img/t1-img3.webp")}
-          ></img>
-
           <div>
+            <h3>Composition d'un mot de passe :</h3>
             <p>
-              Afin de vous sensibiliser sur les mails frauduleux, nous allons
-              vous expliquer comment les reconnaître et vous en protégez. Il est
-              important d’apprendre à repérer les arnaques, et ce, avant même de
-              cliquer sur le contenu du message.
+              Votre mot de passe est l’élément-clé de n’importe quel compte que
+              vous avez, donc il doit être difficile à deviner pour cela qu’il
+              ne faut surtout pas utiliser :
             </p>
-            <br />
+            <ul className="ArticleList">
+              <li>➡️ Votre adresse,</li>
+              <li>➡️ Votre date de naissance,</li>
+              <li>➡️ Le nom de votre animal domestique,</li>
+              <li>
+                ➡️ Ou des mots en lien avec le service ou application que vous
+                utilisez.
+              </li>
+            </ul>
             <p>
-              💡Conseil pour les liens : <br />
+              Un mot de passe robuste est un mot de passe possédant minimum 12
+              caractères, car plus votre mot de passe est long plus il est
+              difficile de le trouver. Mais il faudra également s'en souvenir.
+            </p>
+            <p>
+              Mais qu'en est-il des inclusions de lettre majuscule au début du
+              mot de passe ou du remplacement les "a" par "@" ?
+            </p>
+            <p>Plus votre mot de passe est long plus il est robuste.</p>
+            <p>
+              Pour cela que nous allons vous proposer différentes solutions pour
+              vos mots de passe :
+            </p>
+            <ul className="ArticleList">
+              <li>
+                ➡️ Dans un premier temps vous pouvez utiliser une phrase que
+                vous pouvez retenir facilement : UnLapinDansLaForet
+              </li>
+              <li>
+                ➡️ Composer un votre mot de passe en utilisant la première
+                lettre de chaque mot d’une phrase. Vous n’aurez qu’à vous
+                rappeler cette phrase pour vous rappeler le mot de passe. Par
+                exemple avec la phrase : « Un mot de passe possède 12 caractères
+                minimum », vous pouvez obtenir le mot de passe : UmdPp12Cm
+              </li>
+            </ul>
+            <img
+              className="ContentImg"
+              src={require("../../assets/theme2-img/t2-img2.webp")}
+            ></img>
+            <p>Ne pas oublier de changer régulièrement vos mots de passe !</p>
+            <p>
+              Pour la dernière solution, vous pouvez utiliser un gestionnaire de
+              mot de passe. Normalement, il est conseillé d'utiliser un mot de
+              passe unique pour chaque application ou système, mais c’est
+              compliqué de retenir tous nos mots de passe, alors on utilise
+              parfois le même pour plusieurs applications / systèmes ce qui est
+              fortement déconseillé.
+            </p>
+            <h3>Gestionnaire de mots de passe :</h3>
+            <p>
+              Ne commettez pas pour autant l’erreur de les noter sur un
+              pense-bête que vous laisserez à proximité de votre équipement. À
+              la place commencer à utiliser des gestionnaires de mots passe tel
+              que [KeePass](https://keepass.info/),
+              [Bitwarden](https://bitwarden.com/),
+              [Dashlane](https://www.dashlane.com/) ou bien
+              [1Password](https://1password.com/).
+            </p>
+            <p>
+              Comment ça marche ? Les gestionnaires de mots de passe stockent
+              tous vos mots de passe derrière un unique mot de passe « maître ».
+              Il s'agit de logiciels à installer sur votre ordinateur.
+            </p>
+            <p>
+              Bien plus qu’un outil de confort, le gestionnaire de mot de passe
+              propose de nombreuses fonctionnalités :
+            </p>
+            <ul className="ArticleList">
+              <li>
+                ➡️ Générer un mot de passe unique et complexe pour chaque site
+                internet,
+              </li>
+              <li>
+                ➡️ Gérer ses mots de passe de manière collaborative dans un
+                trousseau sécurisé, une sorte de coffre-fort numérique,
+              </li>
+              <li>➡️ Remplir automatiquement les formulaires,</li>
+              <li>
+                ➡️ Stocker les mots de passe en local dans un format chiffré,
+              </li>
+              <li>➡️ Synchroniser sa base de mots de passe,</li>
+              <li>
+                ➡️ Stocker des données personnelles comme un identifiant, nom
+                d’utilisateur, nom, prénom, numéro de téléphone.
+              </li>
+            </ul>
+            <h3>À retenir :</h3>
+            <p>
+              Un bon mot de passe est un mot de passe long. Plus un mot de passe
+              est long, plus il est robuste. N’écrivez votre mot de passe nulle
+              part, au besoin,
               <br />
-              Vous pouvez vérifier la destination du lien qui est caché derrière
-              le mot "Connexion" en positionnant le curseur devant celui-ci sans
-              cliquer dessus, vous pourrez ensuite voir le lien s'afficher en
-              bas à gauche de votre navigateur. <br />
+              Utilisez un gestionnaire de mot de passe. Utilisez un mot de passe
+              distinct pour le travail et vos sites personnels préférés.
               <br />
-              ➡️ Le meilleur moyen reste de vous rendre manuellement le sur site
-              officiel via l'adresse sur votre moteur de recherche au lieu de
-              cliquer sur le lien du mail.
+              Ne divulguez pas et ne partagez jamais un mot de passe.
             </p>
           </div>
         </div>
@@ -137,84 +213,29 @@ function Article2() {
       <hr />
       <div className="CategoryContent">
         <p>
-          Lorsque l'auteur de l'escroquerie est identifiable, la victime de
-          l'arnaque sur Internet peut saisir une juridiction civile pour obtenir
-          le remboursement des sommes extorquées et des dommages et intérêts en
-          cas de préjudice.
+          Le RGPD a été adopté le 17 avril 2016 et les deux délibérations de la
+          CNIL « mot de passe » datent respectivement du 19 janvier 2017
+          (délibération n°2017-012) et du 22 juin 2017 (délibération
+          n°2017-190).
         </p>
+
         <p>
-          En cas de phishing où toute autre forme d'escroquerie, la victime peut
-          porter plainte auprès d'un commissariat. Si l'auteur de l'arnaque sur
-          Internet n'est pas identifiable, la victime peut porter plainte contre
-          escroc. Le tribunal pénal saisi peut non seulement sanctionner
-          l'auteur de l'escroquerie, mais aussi octroyer des dommages et
-          intérêts au particulier arnaqué sur Internet.
-        </p>
-        <p>
-          Le particulier arnaqué sur Internet peut toujours opter pour la saisie
-          des tribunaux français, que l'auteur de l'escroquerie se situe en
-          France ou à l'étranger.
-        </p>
-        <p>Procédure judiciaire</p>
-        <p>
-          À défaut de résolution amiable après l'envoi d'une lettre de mise en
-          demeure, le particulier arnaqué sur Internet peut saisir au choix le
-          tribunal d'instance lorsque le montant du litige est inférieur à 10
-          000 € pour obtenir réparation. Ou le tribunal pénal pour faire
-          sanctionner l'auteur de l'infraction et obtenir des dommages et
-          intérêts.
-        </p>
-        <br />
-        <p>
-          <p></p>Usurpation d’identité :
-        </p>
-        <p>
-          L’article 434-23 du Code pénal, qui punit de 5 ans d’emprisonnement et
-          75 000 euros d’amende le fait de prendre le nom d’un tiers. Mais
-          surtout, depuis la loi LOPSI II du 14 mars 2011, le « phishing »
-          rentre dans le champ de la nouvelle incrimination relative à
-          l’usurpation d’identité en ligne, que l’article 226-4-1 de Code pénal
-          punit d’un an d’emprisonnement et de 15 000 € d’amende.
-        </p>
-        <p>
+          La directive sur les services de paiement (DSP2) a pour objectif
+          d'instaurer notamment des normes de sécurité plus strictes pour les
+          paiements en ligne afin de renforcer la confiance des consommateurs
+          dans les achats en ligne.
+          <br />
           Source :{" "}
-          <a href="https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165379/#LEGISCTA000006165379">
+          <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000031878407/">
             legifrance.gouv.fr
           </a>
         </p>
-        <br />
-        <p>Escroquerie :</p>
         <p>
-          L’article 313-1 du Code pénal, punit de 5 ans d’emprisonnement et de
-          375 000 € d’amende.
-        </p>
-        <p>
+          Les mots de passe sont liés aux vols de données à caractère personnel.
+          Cela est susceptible de 2 ans d’emprisonnement et 60 000€ d’amende.
+          <br />
           Source :{" "}
-          <a href="https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165331/">
-            legifrance.gouv.fr
-          </a>
-        </p>
-        <br />
-        <p>Collecte frauduleuse de données à caractère personnel :</p>
-        <p>
-          L’article 226-18 du Code pénal, qui prévoit une peine de 5 ans de
-          prison et de 300 000 € d’amende.
-        </p>
-        <p>
-          Source :{" "}
-          <a href="https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165313/#LEGISCTA000006165313">
-            legifrance.gouv.fr
-          </a>
-        </p>
-        <br />
-        <p>Atteinte à un système de traitement automatisé de données :</p>
-        <p>
-          L’article 323-3 du Code pénal, punit de deux ans d’emprisonnement et
-          30 000 € d’amende.
-        </p>
-        <p>
-          Source :{" "}
-          <a href="https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006149839/">
+          <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030939438">
             legifrance.gouv.fr
           </a>
         </p>

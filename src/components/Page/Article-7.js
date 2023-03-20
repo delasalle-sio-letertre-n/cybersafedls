@@ -8,7 +8,10 @@ function Article7() {
         Article 7 : <br />
         Les cookies et les DCP
       </h1>
-      <img className="CenteredImg" src=""></img>
+      <img
+        className="ArticleImg"
+        src={require("../../assets/theme7-img/t7-img1.webp")}
+      ></img>
       <h2>Sommaire</h2>
       <ul className="Summary">
         <li>L'objectif du cybercriminel</li>

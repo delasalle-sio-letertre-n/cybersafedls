@@ -8,7 +8,10 @@ function Article6() {
         Article 6 : <br />
         L’ingénierie sociale
       </h1>
-      <img className="CenteredImg" src=""></img>
+      <img
+        className="ArticleImg"
+        src={require("../../assets/theme6-img/t6-img1.webp")}
+      ></img>
       <h2>Sommaire</h2>
       <ul className="Summary">
         <li>L'objectif du cybercriminel</li>
