@@ -78,6 +78,9 @@
     .Art7 {
       background-image: url(../../assets/Articles/bg-Art7.jpg);
     }
+    .ArtPresentation {
+      background-image: url(../../assets/Articles/bg-ArtPresentation.webp);
+    }
 
     a {
       position: relative;
@@ -383,6 +386,10 @@
 
       .Art4 {
         grid-column: 2 / 4;
+      }
+
+      .ArtPresentation {
+        grid-column: 1 / 4;
       }
     }
 

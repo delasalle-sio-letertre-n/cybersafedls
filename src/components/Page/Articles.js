@@ -51,6 +51,13 @@ function Articles() {
           <p>Cookies et données à caractère personnel</p>
         </div>
       </div>
+      <div className="Art ArtPresentation">
+        <a href="/articles/presentation"></a>
+        <div className="ArtContent">
+          <h2>Présentation</h2>
+          <p>Retour sur notre intervention</p>
+        </div>
+      </div>
     </div>
   );
 }
