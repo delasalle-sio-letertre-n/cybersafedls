@@ -20,18 +20,21 @@ function Articles() {
         </div>
       </div>
       <div className="Art Art3">
+        <a href="/articles/3"></a>
         <div className="ArtContent">
           <h2>Scam</h2>
           <p>Éviter les arnaques sur Internet</p>
         </div>
       </div>
       <div className="Art Art4">
+        <a href="/articles/4"></a>
         <div className="ArtContent">
           <h2>Social</h2>
           <p>Se protéger sur les réseaux sociaux</p>
         </div>
       </div>
       <div className="Art Art5">
+        <a href="/articles/5"></a>
         <div className="ArtContent">
           <h2>Malware</h2>
           <p>Reconnaître un programme malveillant</p>

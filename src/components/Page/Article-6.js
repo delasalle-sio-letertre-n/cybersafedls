@@ -45,7 +45,10 @@ function Article6() {
       <h2>👨‍💻 Les démarches de l'attaquant</h2>
       <hr />
       <div className="CategoryContent">
-        <p>TEXTE A ECRIRE ICI POUR INTRODUIRE LE SUJET</p>
+        <p>
+          Pour s'en prendre à une cible, un cyberattaquant peut avoir recours à
+          différentes techniques d'ingénierie sociale :{" "}
+        </p>
         <ul className="ArticleList">
           <li>
             ➡️ Phishing : Le phishing est une forme de fraude et d'hameçonnage
