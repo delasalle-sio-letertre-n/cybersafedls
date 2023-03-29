@@ -161,10 +161,11 @@ function Article2() {
               Ne commettez pas pour autant l’erreur de les noter sur un
               pense-bête que vous laisserez à proximité de votre équipement. À
               la place commencer à utiliser des gestionnaires de mots passe tel
-              que [KeePass](https://keepass.info/),
-              [Bitwarden](https://bitwarden.com/),
-              [Dashlane](https://www.dashlane.com/) ou bien
-              [1Password](https://1password.com/).
+              que :<br />
+              <a href="https://keepass.info/">KeePass</a>,{" "}
+              <a href="https://bitwarden.com/">Bitwarden</a>,{" "}
+              <a href="https://www.dashlane.com/">Dashlane</a> ou bien{" "}
+              <a href="https://1password.com/">1Password</a>.
             </p>
             <p>
               Comment ça marche ? Les gestionnaires de mots de passe stockent

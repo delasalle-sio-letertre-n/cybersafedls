@@ -15,7 +15,10 @@
   min-height: 90vh;
 
   .ContentImg {
+    display: block;
     max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .Banner {
@@ -352,9 +355,9 @@
     margin-right: 15vw;
 
     .ContentImg {
-      max-width: 25rem;
+      max-width: 50rem;
+      max-height: 30rem;
     }
-
     .CenteredImg {
       max-width: 60rem;
     }
